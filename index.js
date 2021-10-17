@@ -1,5 +1,8 @@
-let nome = window.prompt("Seu nome: ");
-let sobrenome = window.prompt("Seu sobrenome: ");
+let nome = prompt("Digite seu nome:") || "";
+let sobrenome = prompt("Digite seu sobrenome:") || "";
 
-window.alert(`Nome completo: ${nome} ${sobrenome}`);
-window.alert(`Nome de Catálogo: ${sobrenome.toUpperCase()}, ${nome}`);
+let nomecompleto = `Nome completo: ${nome} ${sobrenome}`;
+let nomecatalogo = `Nome de catálogo: ${sobrenome.toUpperCase()}, ${nome}`;
+
+alert(nomecompleto);
+alert(nomecatalogo);
